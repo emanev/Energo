@@ -101,11 +101,12 @@ python scripts/generate_energy_trend_plot.py
 
 Then open the self-contained HTML file in your browser:
 
-`data/invoices/energy_price_trend.html`
+`reports/energy_price_trend.html`
 
 The chart aggregates duplicate months by summing EUR amounts and shows the trend
-from January 2024 through the latest available month. Generated files under
-`data/` are gitignored and are not committed.
+from January 2024 through the latest available month. The chart is written to
+`reports/` so it can be committed; raw invoice data under `data/` stays
+gitignored.
 
 ## Adjusting selectors
 

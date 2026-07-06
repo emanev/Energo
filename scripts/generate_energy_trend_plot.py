@@ -17,7 +17,7 @@ import plotly.graph_objects as go
 from scripts.invoice_parsing import BG_MONTHS, MIN_DATE
 
 RECEIPTS_PATH = Path("data/invoices/receipts.txt")
-OUTPUT_PATH = Path("data/invoices/energy_price_trend.html")
+OUTPUT_PATH = Path("reports/energy_price_trend.html")
 
 BG_MONTH_BY_NAME = {name: month for month, name in BG_MONTHS.items()}
 
