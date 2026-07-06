@@ -1,0 +1,20 @@
+# Scraper session state & secrets — never commit
+.env
+.cursor/
+.auth/
+user-data/
+*.storage_state.json
+
+# Downloaded invoices / PDFs
+data/
+docs/
+data/invoices/
+invoices/
+downloads/
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

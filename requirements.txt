@@ -1,0 +1,4 @@
+playwright
+pytest
+plotly
+python-dotenv
