@@ -132,6 +132,10 @@ python -m playwright codegen https://info.electrohold.bg/webint/vok/index.php
 ## Notes
 
 - Only use this for your own account and in line with the portal's Terms of
-Service.
+  Service.
 - Be polite: the script downloads sequentially with a short delay between files.
+- Cursor agent guidance for this scraper lives in
+  [`.cursor/skills/portal-invoice-scraper/`](.cursor/skills/portal-invoice-scraper/).
+  That folder is committed; other `.cursor/` working files (e.g. plans) stay
+  gitignored.
 

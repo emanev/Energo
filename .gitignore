@@ -1,6 +1,9 @@
 # Scraper session state & secrets — never commit
 .env
-.cursor/
+# Cursor working state — keep shareable skills
+.cursor/*
+!.cursor/skills/
+!.cursor/skills/**
 .auth/
 user-data/
 *.storage_state.json
