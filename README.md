@@ -22,9 +22,9 @@ bot protection, or rate limits. The human stays in the loop for login.
 - **Local, gitignored session.** The browser profile (cookies/session) is stored
 in `.auth/user-data/`, which is gitignored, so you usually log in once and the
 session is reused on later runs.
-- **Downloads are gitignored.** PDFs are saved under `data/invoices/pdf/` and
-extracted invoice lines go to `data/invoices/receipts.txt`. Both paths are
-gitignored and never committed.
+- **Downloads.** PDFs are saved under `data/invoices/pdf/` and are gitignored.
+  Aggregated EUR lines are written to `data/invoices/receipts.txt` and are
+  committed so the chart source data stays in sync with `reports/`.
 
 
 
@@ -104,8 +104,8 @@ Then open the self-contained HTML file in your browser:
 `reports/energy_price_trend.html`
 
 The chart aggregates duplicate months by summing EUR amounts and shows the trend
-from January 2024 through the latest available month. The chart is written to
-`reports/` so it can be committed; raw invoice data under `data/` stays
+from January 2024 through the latest available month. `data/invoices/receipts.txt`
+and `reports/energy_price_trend.html` are committed; PDFs under `data/` stay
 gitignored.
 
 ## Adjusting selectors

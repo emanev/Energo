@@ -8,12 +8,14 @@
 user-data/
 *.storage_state.json
 
-# Downloaded invoices / PDFs
-data/
+# Downloaded invoices / PDFs (keep only the aggregated receipts.txt)
+data/*
+!data/invoices/
+data/invoices/*
+!data/invoices/receipts.txt
 docs/
-data/invoices/
-invoices/
-downloads/
+/invoices/
+/downloads/
 *.pdf
 
 # Python
